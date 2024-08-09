@@ -46,7 +46,8 @@ nav ul li a {
     display: block;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     background-color: #003B6D;
 }
 
@@ -62,6 +63,20 @@ main {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+.breadcrumb {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #003B6D;
+}
+
+.breadcrumb span {
+    color: #666;
 }
 
 .intro, .adoption-links, .consultation-form {
@@ -127,4 +142,16 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
+}
+
+
+.breadcrumb {
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+.breadcrumb span {
+    font-size: 1em;
+    color: #333;
 }

@@ -13,16 +13,23 @@
         <p>Evidence-based pet care advice for every pet lover</p>
     </header>
     <nav>
+        <form action="search_results.html" method="get">
+            <input type="text" placeholder="Search" class="search-bar" name="query">
+            <button type="submit">Search</button>
+        </form>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="cat.html">Cats</a></li>
             <li><a href="dog.html">Dogs</a></li>
             <li><a href="bird.html">Birds</a></li>
             <li><a href="faq.html">FAQ</a></li>
         </ul>
-        <input type="text" placeholder="Search" class="search-bar">
     </nav>
     <main>
+        <!-- Breadcrumb for the homepage -->
+        <section class="breadcrumb">
+            <a href="index.html">Home</a>
+        </section>
         <section class="intro">
             <p>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.</p>
             <p>Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.</p>
@@ -57,6 +64,15 @@
                     <option value="other">Other</option>
                 </select>
                 
+                <label for="timezone">Time Zone:</label>
+                <input type="text" id="timezone" name="timezone" required>
+                
+                <label for="pet-name">Pet's Name:</label>
+                <input type="text" id="pet-name" name="pet-name" required>
+                
+                <label for="pet-age">Pet's Age:</label>
+                <input type="number" id="pet-age" name="pet-age" required>
+                
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 
@@ -64,12 +80,10 @@
             </form>
         </section>
         <section class="images">
-            <img src="images/bird1.png" alt="image of bird">
-            <img src="images/cat1.png" alt="image of cat">
-            <img src="images/dog1.png" alt="image of dog">
+            <img src="images/bird1.png" alt="Image of bird">
+            <img src="images/cat1.png" alt="Image of cat">
+            <img src="images/dog1.png" alt="Image of dog">
         </section>
-        
-        
     </main>
     <footer>
         <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
